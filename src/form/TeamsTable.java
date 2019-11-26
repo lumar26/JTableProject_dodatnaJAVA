@@ -67,6 +67,7 @@ public class TeamsTable extends javax.swing.JFrame {
 
         TableModel tm = tblTeams.getModel();
         DefaultTableModel dtm = (DefaultTableModel) tm;
+//        uopste nece da konvertuje u moj model
 //        TeamsTableModel ttm = (TeamsTableModel)tblTeams.getModel();
         for (NBATeam team : teams) {
             Object[] row = new Object[6];
@@ -90,7 +91,8 @@ public class TeamsTable extends javax.swing.JFrame {
         TeamsRepository tr = new TeamsRepository();
         //ka uradim ovo dle odma mi samo inicijalizuje tabelu
 //        tblTeams.setModel(new TeamsTableModel(tr.getTeams()));
-        TeamsTableModel ttm = new TeamsTableModel(tr.getTeams());
+//       ni ovaj kod mi nista nije radio
+//        TeamsTableModel ttm = new TeamsTableModel(tr.getTeams());
         TableColumnModel tcm = tblTeams.getColumnModel();
         TableColumn tc = tcm.getColumn(1);
         TableCellEditor tce = new DefaultCellEditor(getComboBox());

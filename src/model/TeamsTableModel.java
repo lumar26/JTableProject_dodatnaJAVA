@@ -15,9 +15,14 @@ import nba.NBATeam;
 public  class TeamsTableModel extends AbstractTableModel{
     private ArrayList<NBATeam> teams;
 
-    public TeamsTableModel(ArrayList<NBATeam> teams) {
-        this.teams = teams;
+//    public TeamsTableModel(ArrayList<NBATeam> teams) {
+//        this.teams = teams;
+//    }
+
+    public TeamsTableModel(Object[][] o, String[] columns) {
+        
     }
+    
     
     
     @Override
